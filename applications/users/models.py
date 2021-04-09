@@ -1,5 +1,4 @@
 from django.db import models
-from datetime import datetime
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
 # Managers
 from .managers import UserManager
@@ -7,6 +6,7 @@ from .managers import UserManager
 
 # Create your models here.
 class User(AbstractBaseUser, PermissionsMixin):
+    """Define User Model in Database"""
     email = models.EmailField('email', unique=True)
     name = models.CharField('first name', max_length=50, blank=True)
     last_name = models.CharField('last name', max_length=50, blank=True)
