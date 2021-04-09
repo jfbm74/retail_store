@@ -5,4 +5,4 @@ from .viewsets import UserViewSet
 router = routers.SimpleRouter()
 router.register('users', UserViewSet)
 
-urlpatterns =  router.urls
+urlpatterns =  router.urls55555
