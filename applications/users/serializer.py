@@ -4,7 +4,7 @@ from .models import User
 
 
 class UserSerializer(serializers.ModelSerializer):
-    """Serialize object to Json"""
+    """Serialize User object to Json"""
     class Meta:
         """Class Meta"""
         model = User
