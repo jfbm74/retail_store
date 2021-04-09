@@ -8,6 +8,7 @@ from .models import (
 
 # Presentation in django admin panel
 class UserAdmin(admin.ModelAdmin):
+    """ Presentation in django admin panel """
     list_display = (
         'id',
         'name',

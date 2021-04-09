@@ -42,6 +42,7 @@ LOCAL_APPS = [
     # Local Apps
     'applications.users',
     'applications.products',
+    'applications.orders',
 ]
 
 THIRD_PARTY_APPS = [
@@ -84,30 +85,29 @@ WSGI_APPLICATION = 'retailstore.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'postgres',
-        'HOST': 'db',
-        'PORT': 5432,
-    }
-}
-
-# Database for local enviroment
-# 671 5000, +
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'retail',
+#         'NAME': 'postgres',
 #         'USER': 'postgres',
 #         'PASSWORD': 'postgres',
-#         'HOST': 'localhost',
+#         'HOST': 'db',
 #         'PORT': 5432,
 #     }
 # }
 
+# Database for local environment
+# 671 5000, +
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'retail',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'localhost',
+        'PORT': 5432,
+    }
+}
 
 
 # Password validation
