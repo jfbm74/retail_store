@@ -2,7 +2,7 @@ from django.db import models
 
 
 # Create your models here.
-class Order(models.Model):
+class Product(models.Model):
     """ Define a product in database"""
     name = models.CharField('product name', max_length=50)
     price = models.IntegerField('unit price')
@@ -15,4 +15,4 @@ class Order(models.Model):
         ordering = ['name']
 
     def __str__(self):
-        return  self.name
+        return self.name
