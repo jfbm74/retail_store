@@ -97,7 +97,7 @@ DATABASES = {
 }
 
 # Database for local environment
-# 671 5000, +
+# 671 5000, + med
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
