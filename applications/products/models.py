@@ -15,4 +15,5 @@ class Product(models.Model):
         ordering = ['name']
 
     def __str__(self):
+        """ Object representation"""
         return self.name
