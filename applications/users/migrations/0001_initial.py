@@ -4,7 +4,7 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
+    """Handles migrations"""
     initial = True
 
     dependencies = [

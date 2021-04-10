@@ -17,25 +17,19 @@ from .models import User
 
 
 class UserTestCase(TestCase):
-    def setUp(self):
-        """Test case setup."""
-        self.user = User.objects.create(
-            name='Pablo',
-            last_name='Trinidad',
-            email='pablotrinidad@fmma.com',
-            gov_id='1116555555',
-            company='Holberton Cali',
-            password='admin123'
-        )
+    """Test Caases for User Class."""
 
     def test_upper(self):
+        """ Check if is upper"""
         self.assertEqual('foo'.upper(), 'FOO')
 
     def test_isupper(self):
+        """ Check if is upper and lower"""
         self.assertTrue('FOO'.isupper())
         self.assertFalse('Foo'.isupper())
 
     def test_split(self):
+        """ Check a string"""
         s = 'hello world'
         self.assertEqual(s.split(), ['hello', 'world'])
         # check that s.split fails when the separator is not a string
